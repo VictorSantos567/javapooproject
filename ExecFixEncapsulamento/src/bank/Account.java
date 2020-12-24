@@ -5,9 +5,7 @@ public class Account {
 	private String name;
 	private double initialDeposit;
 
-	public Account() {
-	}
-
+	
 	public Account(int numberAccount, String name) {
 		this.numberAccount = numberAccount;
 		this.name = name;
@@ -16,7 +14,7 @@ public class Account {
 	public Account(int numberAccount, String name, double initialDeposit) {
 		this.numberAccount = numberAccount;
 		this.name = name;
-		this.initialDeposit = initialDeposit;
+		deposit(initialDeposit);
 	}
 
 	public int getNumberAccount() {

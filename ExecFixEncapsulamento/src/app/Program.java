@@ -31,7 +31,7 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Account account = new Account();
+		Account account = null ;
 
 		System.out.print("Enter account number: ");
 		int numberAccount = sc.nextInt();
@@ -42,7 +42,7 @@ public class Program {
 		char choice = sc.nextLine().charAt(0);
 
 		if (choice == 'y') {
-			System.out.print("Enter initial deposit value:");
+			System.out.print("Enter initial deposit value: ");
 			double initialDeposit = sc.nextDouble();
 			account = new Account(numberAccount, name, initialDeposit);
 
